@@ -11,6 +11,26 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      function TimerBlink() {
+		  setInterval(function() {
+			var time = Math.random() * 2000;
+			setTimeout(function() {Blink()}, time);
+		  	},2000);
+      }
+      function Blink() {
+		var pic = document.getElementById("icon");
+		pic.src = "media/d33daaBlink.png";
+		setTimeout(function() { pic.src = "media/d33daa.png" }, 200);
+		var random = Math.random();
+		if (random > 0.5) {
+			setTimeout(function() {pic.src = "media/d33daaBlink.png"},100);
+			setTimeout(function() { pic.src = "media/d33daa.png" }, 100);
+		}
+      }
+		
+    </script>
 	<!-- 
              $               
    *1▒g▒#▒$▒▒1▒,Q        
@@ -35,12 +55,12 @@ $▒9g e@▒▒!4▒▒$-  #e
        g   
 	-->
   </head>
-  <body>
+  <body onload="TimerBlink()";
     <div class="wrapper">
       <header>
         <h1>D33DAA</h1>
-	 	<img src = "media/d33daa.png" alt = "A hooded head with a pitch black face hosting only neon green eyes.">
-        <p>I love memes.</p>
+	 	<img id = "icon" src = "media/d33daa.png" alt = "A hooded head with a pitch black face hosting only neon green eyes." onclick="Blink(this)">
+		  <pre><code class = "highlight"><span class = "go">System.out.println</br>(<span class ="s">"Please end my suffering"</span>);</span></code></pre>
       </header>
         <section>
             <h1>Has Science Gone Too Far?</h1>

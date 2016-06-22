@@ -8,6 +8,16 @@ body {
   font-weight:400;
 }
 
+#icon {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+}
+#icon:hover {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
