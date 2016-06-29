@@ -57,13 +57,9 @@ img {
 	-webkit-font-smoothing:subpixel-antialiased;
 }
 
-.panel h1 {
-	font-weight: bold;
-}
-
 .panel-body {
 	padding: 1%;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 #icons {
