@@ -17,10 +17,6 @@ body {
 	transform: rotate(20deg);
 }
 
-.wrapper {
-	width:50;
-	margin: auto;
-}
 
 blockquote {
 	border-left:1px solid #e5e5e5;
@@ -81,4 +77,39 @@ img {
 	max-width:640px !important; 
 	max-height: none !important;
 }
+
+@media (max-width: 1200px) {
+	
+	body {
+		padding: 0;	
+	}
+	
+	#icon {
+		max-width: 400px;
+		padding: auto;
+	}
+	
+	.header {
+		float: none !important;	
+	}
+	
+	.header, .comments {
+		position: static !important;
+	}
+	
+	.section, .comments {
+		margin-left: 0 !important;;
+	}	
+	
+	
+	.header, .section {
+		font-size: 1.3em;
+	}	
+	
+	#disqus_thread {
+		overflow-y: auto !important;
+		max-height: none;
+	}
+}
+
 
