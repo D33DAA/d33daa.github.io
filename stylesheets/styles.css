@@ -74,5 +74,6 @@ img {
 
 .comments {
 	position: fixed !important;
+	overflow: auto;
 }
 
