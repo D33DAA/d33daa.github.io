@@ -74,6 +74,15 @@ img {
 
 .comments {
 	position: fixed !important;
-	overflow: auto;
+}
+
+#disqus_thread {
+	overflow-y: scroll !important;
+	max-height: 800px;
+}
+
+#content iframe { 
+	max-width:640px !important; 
+	max-height: none !important;
 }
 
