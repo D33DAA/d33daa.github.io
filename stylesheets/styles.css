@@ -1,57 +1,58 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
 
 body {
-  background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#595959;
+	background-color: #fff;
+	padding:50px;
+	font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#595959;
 }
 
 #icon {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out;
 }
 #icon:hover {
-  -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
 }
 
 .wrapper {
-  width:50;
-  margin: auto;
+	width:50;
+	margin: auto;
 }
 
 blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
+	border-left:1px solid #e5e5e5;
+	margin:0;
+	padding:0 0 0 20px;
+	font-style:italic;
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
-  font-size:12px;
+	font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+	color:#333;
+	font-size:12px;
 }
 
 pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
+	padding:8px 15px;
+	background: #f8f8f8;
+	border-radius:5px;
+	border:1px solid #e5e5e5;
+	overflow-x: auto;
 }
 
 img {
-  width:100%;
-  border-radius: 20px;
-  margin-top: 1%;
+	width:100%;
+	border-radius: 20px;
+	margin-top: 1%;
 	margin-bottom: 1%;
+	max-height: 750px;
 }
 
 .header {
-  position:fixed !important;
+	position:fixed !important;
 	padding-right: 2% !important;
 	-webkit-font-smoothing:subpixel-antialiased;
 }
@@ -64,8 +65,3 @@ img {
 	padding: 1%;
 	font-size: 1.3em;
 }
-
-.panel-heading {
-	
-}
-
