@@ -65,3 +65,14 @@ img {
 	padding: 1%;
 	font-size: 1.3em;
 }
+
+#icons {
+	font-size: 3em;
+	text-align: center;
+	color:darkcyan;
+}
+
+.comments {
+	position: fixed !important;
+}
+
