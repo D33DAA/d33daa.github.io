@@ -122,4 +122,10 @@ img {
 	}
 }
 
+@media (max-width: 992px) {
+	.section {
+		width: 100% !important;	
+	}
+}
+
 
