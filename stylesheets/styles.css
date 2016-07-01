@@ -81,7 +81,7 @@ img {
 @media (max-width: 1200px) {
 	
 	body {
-		padding: 0;	
+		padding: 0;
 	}
 	
 	#icon {
@@ -90,16 +90,26 @@ img {
 	}
 	
 	.header {
-		float: none !important;	
+		float: left;
+		margin: 0 !important;
 	}
 	
 	.header, .comments {
 		position: static !important;
 	}
 	
-	.section, .comments {
-		margin-left: 0 !important;;
+	.comments{
+		margin: auto !important;
 	}	
+	
+	.section {
+		margin: auto !important;
+		width: 58% !important;
+	}
+	
+	.section,.comments {
+		overflow: hidden !important;
+	}
 	
 	
 	.header, .section {
