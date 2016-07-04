@@ -134,6 +134,10 @@ img {
 	.section {
 		width: 100% !important;	
 	}
+	
+	#scrollToTop {
+		position: static;	
+	}
 }
 
 
