@@ -18,4 +18,31 @@ function Smile(pic) {
 			setTimeout(function() { pic.src = "media/d33daa.png" }, 100);
 		}
       }
-		
+
+//--------Scroll To Top & Smooth Scrolling--------//
+$(document).ready(function(){ 
+						   
+			$("#scrollToTop").hide();
+			$(window).scroll(function() {
+				if ($(window).scrollTop() > 100) {
+					$("#scrollToTop").fadeIn("slow");
+				} else {
+					$("#scrollToTop").fadeOut("fast");
+				}
+			})
+		});	
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
