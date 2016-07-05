@@ -139,6 +139,10 @@ img {
 	#scrollToTop {
 		position: static;	
 	}
+	
+	.panel-body {
+		text-align: left;	
+	}
 }
 
 
