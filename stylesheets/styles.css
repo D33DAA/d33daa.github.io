@@ -83,6 +83,7 @@ img {
 	position: fixed; 
 	bottom: 50px;
 	height: 45px;
+	font-weight: bold;
 }
 
 @media (max-width: 1200px) {
