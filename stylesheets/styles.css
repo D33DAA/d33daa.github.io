@@ -84,6 +84,13 @@ img {
 	bottom: 50px;
 	height: 45px;
 	font-weight: bold;
+	text-align: center;
+}
+
+#scrollToComments {
+	text-align: center;
+	width: 100%;
+	display: none;
 }
 
 @media (max-width: 1200px) {
@@ -128,6 +135,10 @@ img {
 	#disqus_thread {
 		overflow-y: auto !important;
 		max-height: none;
+	}
+	
+	#scrollToComments {
+		display: block !important;
 	}
 	
 }
