@@ -15,7 +15,7 @@ function Smile(pic) {
 		var random = Math.random();
 		if (random > 0.5) {
 			setTimeout(function() {pic.src = "media/d33daaBlink.jpeg"},100);
-			setTimeout(function() { pic.src = "media/d33daa.png" }, 100);
+			setTimeout(function() { pic.src = "media/d33daa.jpeg" }, 100);
 		}
       }
 
