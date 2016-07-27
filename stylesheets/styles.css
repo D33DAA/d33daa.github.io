@@ -7,6 +7,16 @@ body {
 	color:#595959;
 }
 
+p {
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	font-size: 1.1em !important;
+}
+
+h1 {
+	font-family: 'Bungee', cursive !important;
+}
+
 #icon {
 	border-radius: 50%;
 	-webkit-transition: -webkit-transform .4s ease-in-out;
