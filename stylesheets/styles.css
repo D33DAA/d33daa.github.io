@@ -1,10 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
 
 body {
 	background-color: #fff;
 	padding:50px;
 	font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#595959;
+}
+
+p {
+	font-size: 1.2em !important;
+}
+
+h1 {
+	font-family: 'Bungee', cursive !important;
 }
 
 #icon {
@@ -62,12 +69,17 @@ img {
 .panel-body {
 	padding: 1%;
 	font-size: 1.2em;
+	text-align: justify;
 }
 
 #icons {
 	font-size: 3em;
 	text-align: center;
 	color:darkcyan;
+}
+
+#icons a {
+	text-decoration: none !important;
 }
 
 .comments {
@@ -84,6 +96,20 @@ img {
 	max-height: none !important;
 }
 
+#scrollToTop {
+	position: fixed;
+	bottom: 50px;
+	height: 45px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#scrollToComments {
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
 @media (max-width: 1200px) {
 
 	body {
@@ -93,6 +119,7 @@ img {
 	#icon {
 		max-width: 400px;
 		padding: auto;
+
 	}
 
 	.header {
@@ -126,10 +153,24 @@ img {
 		overflow-y: auto !important;
 		max-height: none;
 	}
+
+	#scrollToComments {
+		display: block !important;
+	}
+
 }
 
 @media (max-width: 992px) {
 	.section {
 		width: 100% !important;
 	}
+  
+	#scrollToTop {
+		position: static;
+	}
+
+	.panel-body {
+		text-align: left;
+	}
+  
 }
