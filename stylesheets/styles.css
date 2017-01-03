@@ -54,6 +54,12 @@ img {
 	max-height: 750px;
 }
 
+.sprite {
+	display: block;
+	height: 200px;
+	width: auto;
+}
+
 .header {
 	position:fixed !important;
 	padding-right: 2% !important;
@@ -158,7 +164,7 @@ img {
 	.section {
 		width: 100% !important;
 	}
-
+  
 	#scrollToTop {
 		position: static;
 	}
@@ -166,4 +172,5 @@ img {
 	.panel-body {
 		text-align: left;
 	}
+  
 }
