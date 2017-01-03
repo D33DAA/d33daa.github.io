@@ -47,6 +47,13 @@ img {
 	max-height: 750px;
 }
 
+.sprite {
+	display: block;
+	height: 200px;
+	width: auto;
+	margin: 0 auto !important;
+}
+
 .header {
 	position:fixed !important;
 	padding-right: 2% !important;
@@ -73,49 +80,49 @@ img {
 	max-height: 800px;
 }
 
-#content iframe { 
-	max-width:640px !important; 
+#content iframe {
+	max-width:640px !important;
 	max-height: none !important;
 }
 
 @media (max-width: 1200px) {
-	
+
 	body {
 		padding: 0;
 	}
-	
+
 	#icon {
 		max-width: 400px;
 		padding: auto;
 	}
-	
+
 	.header {
 		float: left;
 		margin: 0 !important;
 	}
-	
+
 	.header, .comments {
 		position: static !important;
 	}
-	
+
 	.comments{
 		margin: auto !important;
-	}	
-	
+	}
+
 	.section {
 		margin: auto !important;
 		width: 58% !important;
 	}
-	
+
 	.section,.comments {
 		overflow: hidden !important;
 	}
-	
-	
+
+
 	.header, .section {
 		font-size: 1.3em;
-	}	
-	
+	}
+
 	#disqus_thread {
 		overflow-y: auto !important;
 		max-height: none;
@@ -124,8 +131,6 @@ img {
 
 @media (max-width: 992px) {
 	.section {
-		width: 100% !important;	
+		width: 100% !important;
 	}
 }
-
-
