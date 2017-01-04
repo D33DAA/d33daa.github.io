@@ -125,8 +125,8 @@ img {
 	}
 
 	.header {
-		float: left;
 		margin: 0 !important;
+		float: left;
 	}
 
 	.header, .comments {
