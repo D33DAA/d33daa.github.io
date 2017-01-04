@@ -86,6 +86,16 @@ img {
 	position: fixed !important;
 }
 
+.quote p{
+	font-style: italic;
+}
+
+.quote img {
+	width: 200px;
+	height: auto;
+}
+
+
 #disqus_thread {
 	overflow-y: scroll !important;
 	max-height: 800px;
