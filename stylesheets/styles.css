@@ -86,6 +86,16 @@ img {
 	position: fixed !important;
 }
 
+.quote p{
+	font-style: italic;
+}
+
+.quote img {
+	width: 200px;
+	height: auto;
+}
+
+
 #disqus_thread {
 	overflow-y: scroll !important;
 	max-height: 800px;
@@ -100,8 +110,10 @@ img {
 	position: fixed;
 	bottom: 50px;
 	height: 45px;
+	right: 680px;
 	font-weight: bold;
 	text-align: center;
+    border-radius: 20px;
 }
 
 #scrollToComments {
@@ -123,8 +135,8 @@ img {
 	}
 
 	.header {
-		float: left;
 		margin: 0 !important;
+		float: left;
 	}
 
 	.header, .comments {
