@@ -58,6 +58,7 @@ img {
 	display: block;
 	height: 200px;
 	width: auto;
+	float: left;
 }
 
 .header {
@@ -176,7 +177,7 @@ img {
 	.section {
 		width: 100% !important;
 	}
-  
+
 	#scrollToTop {
 		position: static;
 	}
@@ -184,5 +185,5 @@ img {
 	.panel-body {
 		text-align: left;
 	}
-  
+
 }
