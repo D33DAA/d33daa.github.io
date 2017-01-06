@@ -55,8 +55,9 @@ img {
 
 .sprite {
 	display: block;
-	height: 200px;
-	width: auto;
+	height: auto !important;
+	width: 100% !important;
+	max-width: 200px;
 }
 
 .header {
