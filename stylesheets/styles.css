@@ -108,9 +108,8 @@ img {
 
 #scrollToTop {
 	position: fixed;
-	bottom: 50px;
-	height: 45px;
-	right: 680px;
+	bottom: 5%;
+	right: 32%;
 	font-weight: bold;
 	text-align: center;
     border-radius: 20px;
