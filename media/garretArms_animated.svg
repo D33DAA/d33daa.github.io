@@ -1,0 +1,7 @@
+<!--?xml version="1.0" standalone="no"?--><svg height="400" width="300" style="left: 500px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs xmlns="http://www.w3.org/1999/xhtml"><style type="text/css"></style></defs>
+    <g id="imageGroup">
+        <path class="path FRprcaDL_0" d="M 214.95190528383287 112.49999999999997 
+							  A 75 75 0 1 0 225 150
+							  l-50,0" stroke="black" fill-opacity="0" stroke-width="10"></path>
+    </g>
+<style>.FRprcaDL_0{stroke-dasharray:483 485;stroke-dashoffset:484;animation:FRprcaDL_draw_0 5200ms ease 0ms infinite,FRprcaDL_fade 5200ms linear 0ms infinite;}@keyframes FRprcaDL_draw{100%{stroke-dashoffset:0;}}@keyframes FRprcaDL_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes FRprcaDL_draw_0{15.384615384615385%{stroke-dashoffset: 484}41.02564102564103%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

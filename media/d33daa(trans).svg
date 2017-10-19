@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height="120" width="120" style="&#10;    left: 500px;&#10;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs xmlns="http://www.w3.org/1999/xhtml"><style type="text/css"><![CDATA[]]></style></defs>
+			<g id="imageGroup">
+			<polygon points="0,120 0,80 24,34 58,2 62,2 96,34 120,80 120,120" style="fill:#5c5c5c;"/>
+			<polygon points="0,120 0,110 24,58 58,30 62,30 96,58 120,110 120,120" style="fill:#13ff04;"/>
+			<polygon points="4,120 4,112 28,60 58,36 62,36  92,60 116,112 116,120" style="fill:black;"/>
+			<g id="eye">
+				<polygon points="37,71 37,68 51,68 51,71 54,71 54,77 51,77 51,80 37,80 37,77 34,77 34,71" style="fill:#13ff04;"/>
+			</g>
+			<g id="eye">
+				<polygon points="83,71 83,68 69,68 69,71 66,71 66,77 69,77 69,80 83,80 83,77 86,77 86,71" style="fill:#13ff04;"/>
+			</g>
+			</g>
+		</svg>
