@@ -1,148 +1,15 @@
 body {
-	background-color: #fff;
+	background-color: black !important;
 	padding:50px;
 	font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color:#595959;
+	color: #595959;
+    height: 3000px;
 }
 
 p {
 	font-size: 1.2em !important;
 }
 
-h1 {
-	font-family: 'Bungee', cursive !important;
-}
-
-#icon {
-	border-radius: 50%;
-	-webkit-transition: -webkit-transform .4s ease-in-out;
-	transition: transform .4s ease-in-out;
-}
-#icon:hover {
-	-webkit-transform: rotate(20deg);
-	transform: rotate(20deg);
-}
-
-
-blockquote {
-	border-left:1px solid #e5e5e5;
-	margin:0;
-	padding:0 0 0 20px;
-	font-style:italic;
-}
-
-code, pre {
-	font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-	color:#333;
-	font-size:12px;
-}
-
-pre {
-	padding:8px 15px;
-	background: #f8f8f8;
-	border-radius:5px;
-	border:1px solid #e5e5e5;
-	overflow-x: auto;
-}
-
-img {
-	width:100%;
-	border-radius: 20px;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	max-height: 750px;
-}
-
-.sprite {
-	display: block;
-	height: auto !important;
-	width: 100% !important;
-	max-width: 200px;
-}
-
-.header {
-	position:fixed !important;
-	padding-right: 2% !important;
-	-webkit-font-smoothing:subpixel-antialiased;
-}
-
-.panel-body {
-	padding: 1%;
-	font-size: 1.2em;
-	text-align: justify;
-}
-
-#icons {
-	font-size: 3em;
-	text-align: center;
-	color:darkcyan;
-}
-
-#icons a {
-	text-decoration: none !important;
-}
-
-.comments {
-	position: fixed !important;
-}
-
-.quote p{
-	font-style: italic;
-}
-
-.quote img {
-	width: 200px;
-	height: auto;
-}
-@media (max-width: 1200px) {
-
-	body {
-		padding: 0;
-	}
-
-	#icon {
-		max-width: 400px;
-		padding: auto;
-
-	}
-
-	.header {
-		margin: 0 !important;
-		float: left;
-	}
-
-	.header, .comments {
-		position: static !important;
-	}
-
-	.comments{
-		margin: auto !important;
-	}
-
-	.section {
-		margin: auto !important;
-		width: 58% !important;
-	}
-
-	.section,.comments {
-		overflow: hidden !important;
-	}
-
-
-	.header, .section {
-		font-size: 1.3em;
-	}
-
-}
-
-@media (max-width: 992px) {
-	.section {
-		width: 100% !important;
-	}
-
-
-	.panel-body {
-		text-align: left;
-	}
-
+svg {
+	position: fixed;
 }

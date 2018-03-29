@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <title>D33DAA</title>
+        <title>GALNET</title>
 
         <link rel="shortcut icon" type="image/x-icon" href="media/d33daaicon.ico"/>
         <link rel="stylesheet" href="stylesheets/styles.css">
@@ -15,8 +15,8 @@
         <meta name="viewport" content="width=device-width">
 
         <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-        <!-- Bootstrap CDNs ->
-            <!-- Latest compiled and minified CSS -->
+        <!-- Bootstrap CDNs -->
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -64,14 +64,35 @@
     </head>
 
     <body>
-        <!--<svg height="300" width="700">
-        
-            <path d="M 226.6044443118978 85.72123903134604 A 100 100 0 1 0 250 150
-            l -100 0 l -30 20 l 30 -20 l 50 0 l 0 20 l 0 -20 l 350 0
-            " stroke="black" stroke-width="20" fill="none"/>
-        
-        </svg>-->
-        <img src="media/d33daa_animated.svg">
+        <svg id="ruleParent" height="30" width="1000">
+            <path id="rule" d="M0 0 L0 0" stroke="white" stroke-width="5"  />
+        </svg>
 
+        <script>
+
+            var ruleParent = document.getElementById("ruleParent");
+            ruleParent.setAttribute("width", $(window).width() * 0.9);
+
+            var line = document.getElementById("rule");
+            var path = line.getAttribute("d");
+            console.log(path);
+            path = path.replace("L0", ruleParent.getAttribute("width"));
+            line.setAttribute("d", path);
+            var length = line.getTotalLength();
+
+            line.style.strokeDasharray = length;
+            line.style.strokeDashoffset = length;
+
+            window.addEventListener("scroll", drawLine);
+
+            function drawLine() {
+                var scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+                var draw = length * scrollPercent;
+                line.style.strokeDashoffset = length - draw;
+            }
+
+        </script>
+        <img id="garret" src="media/d33daa_animated.svg">
     </body>
 </html>
