@@ -64,35 +64,24 @@
     </head>
 
     <body>
-        <svg id="ruleParent" height="30" width="1000">
-            <path id="rule" d="M0 0 L0 0" stroke="white" stroke-width="5"  />
-        </svg>
 
+      <div id="horizRule">
         <script>
-
-            var ruleParent = document.getElementById("ruleParent");
-            ruleParent.setAttribute("width", $(window).width() * 0.9);
-
-            var line = document.getElementById("rule");
-            var path = line.getAttribute("d");
-            console.log(path);
-            path = path.replace("L0", ruleParent.getAttribute("width"));
-            line.setAttribute("d", path);
-            var length = line.getTotalLength();
-
-            line.style.strokeDasharray = length;
-            line.style.strokeDashoffset = length;
-
+            var horizDiv = document.getElementById("horizRule");
             window.addEventListener("scroll", drawLine);
 
             function drawLine() {
                 var scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+                var widthPercent = (scrollPercent + 0.01) * 100;
+                if (widthPercent > 90) {
+                  widthPercent = 90;
+                }
+                horizDiv.style.width = widthPercent + "%";
+                console.log(horizDiv.style.width);
 
-                var draw = length * scrollPercent;
-                line.style.strokeDashoffset = length - draw;
             }
 
         </script>
-        <img id="garret" src="media/d33daa_animated.svg">
+      </div>
     </body>
 </html>
