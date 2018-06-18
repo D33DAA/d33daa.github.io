@@ -10,11 +10,3 @@ p {
 	font-size: 1.2em !important;
     font-family: 'Teko', sans-serif;
 }
-
-#horizRule {
-	background-color: #fff;
-	position: fixed;
-	left: 50%;
-  transform: translate(-50%, 0);
-	height: 1px;
-}

@@ -67,23 +67,5 @@
 
     <body>
 
-      <div id="horizRule">
-        <script>
-            var horizDiv = document.getElementById("horizRule");
-            window.addEventListener("scroll", drawLine);
-
-            function drawLine() {
-                var scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-                var widthPercent = (scrollPercent + 0.01) * 100;
-                if (widthPercent > 90) {
-                  widthPercent = 90;
-                }
-                horizDiv.style.width = widthPercent + "%";
-                console.log(horizDiv.style.width);
-
-            }
-
-        </script>
-      </div>
     </body>
 </html>
