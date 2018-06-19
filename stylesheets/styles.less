@@ -27,9 +27,38 @@ body {
             line-height: 1;
         }
         
-        border-right-color: white;
+        border-right-color: darkgrey;
         border-right-style: dashed;
         border-right-width: medium;
+    }
+    
+    #main {
+        padding-left: 0px;
+        margin-top: 5px;
+        .article {
+            overflow: auto;
+            height: 100%;
+            width: 100%;
+            padding: 5px;
+            
+            border-right: medium dotted darkgray;
+            border-top: medium dotted darkgray;
+            border-bottom: medium dotted darkgray;
+            border-radius: 5px;
+            
+            img {
+                width: auto;
+                max-height: 100px;
+            }
+            
+            .titleRow p {
+                font-size: 2em !important;
+            }
+            
+            .date p {
+                float: right;
+            }
+        }
     }
     
 }

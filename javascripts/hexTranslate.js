@@ -10,7 +10,7 @@ function ascii_to_hexa(str)
    }
                     
 var sideBarText = [
-    '>Initalising...',
+    '>Initialising...',
     '>Hardware Handshake..',
     '>Target Hardware: TriCom Communications Emulator E500',
     '>Target OS: ArcNetOS v17.5.2',
