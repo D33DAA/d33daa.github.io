@@ -1,21 +1,13 @@
-function randomHex() {
-    var hex = "";
-    var characters = ['A', 'B', 'C', 'D', 'E', 'F'];
-    var random = Math.random();
-    var i;
-                
-    for (i = 0; i < 2;i++) {
-        if (random < 0.5) {
-            hex += Math.floor(Math.random() * 10);
-        } else {
-            hex += characters[Math.floor(Math.random() * 6)];
-        }
-        random = Math.random();
-    }
-                    
-    hex += " ";
-    return hex;                
-}
+function ascii_to_hexa(str)
+  {
+	var arr1 = [];
+	for (var n = 0, l = str.length; n < l; n ++) 
+     {
+		var hex = Number(str.charCodeAt(n)).toString(16) + " ";
+		arr1.push(hex);
+	 }
+	return arr1.join('');
+   }
                     
 var sideBarText = [
     '>Initalising...',
@@ -37,7 +29,7 @@ for (i = 0; i < ps.length; i++) {
     var plainText = sideBarText[i];
     var x;
     for (x = 0; x < plainText.length; x++) {
-        para.textContent += randomHex();
+        para.textContent += ascii_to_hexa(plainText.substring(x, x + 1));
     }
 }
 
