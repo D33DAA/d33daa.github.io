@@ -3,14 +3,57 @@ body, html {
 }
 
 body {
-	background-color: black !important;
+    
+    #arcNet {
+        color: white;
+        background-color: black;
+        
+        .article {
+            border-right: medium dotted darkgray;
+            border-top: medium dotted darkgray;
+            border-bottom: medium dotted darkgray;
+        }
+        
+        #sideBar {
+            border-right-color: darkgrey;
+        }
+    }
+    
+    #deltaCorp {
+        
+        
+    color: #26990c;
+    background-color: #212121;
+    
+        
+        #sideBar {
+             .assetTable div {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            
+            padding: 0px;
+            border-right-color: #26990c;
+            
+            .code p {
+                padding-left: 5px;
+            }
+            
+        }
+        
+        .article {
+            border-right: medium dotted #26990c;
+            border-top: medium dotted #26990c;
+            border-bottom: medium dotted #26990c;
+        }
+        
+    }
+    
 	font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #595959;
     
     p {
         font-size: 1.2em !important;
         font-family: 'Teko', sans-serif;
-        color: darkgray;
     }
     
     .flex-container {
@@ -31,9 +74,19 @@ body {
             line-height: 1;
         }
         
-        border-right-color: darkgrey;
         border-right-style: dashed;
         border-right-width: medium;
+        
+        .assetTitle {
+            text-align: center;
+            font-size: 2em;
+            border-bottom: thin dotted #26990c
+        }
+        
+        .assetHeading {
+            font-weight: bold;
+            text-align: justify;
+        }
     }
     
     #main {
@@ -44,10 +97,6 @@ body {
             width: 100%;
             padding: 5px;
             margin-top: 10px;
-            
-            border-right: medium dotted darkgray;
-            border-top: medium dotted darkgray;
-            border-bottom: medium dotted darkgray;
             border-radius: 10px;
             
             img {
