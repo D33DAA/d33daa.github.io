@@ -21,7 +21,7 @@ var sideBarText = [
     '>Received. Data Encryption: HYPERHEX',
     '>Decrypting...'
 ];
-var ps = document.getElementById("sideBar").getElementById("code").getElementsByTagName("p");
+var ps = document.getElementById("code").getElementsByTagName("p");
                     
 var i;
 for (i = 0; i < ps.length; i++) {
